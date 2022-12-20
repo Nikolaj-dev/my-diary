@@ -1,0 +1,12 @@
+{% extends 'FastNote/base.html' %}
+
+{% block title %}
+    {{ request.user.username }} welcome!
+{% endblock %}
+
+{% block content %}
+    <div style="display: inline">
+        <a href="{% url 'notes' %}">Home</a>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+{% endblock %}
